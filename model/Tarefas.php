@@ -6,17 +6,17 @@
          //protected - Familia Visualiza (herança)
          //privati - Apenas a classe mãe visuliza
 
-         private int $codigo;//Tipo da variavel
+         private string $codigo;//Tipo da variavel
          private string $tarefas01;
-         private float $horario;
+         private string $horario;
          private string $dia;
          private string $descricao;
          private bool $status;//true or false
 
 
-    public function __construct(int $codigo,
+    public function __construct(string $codigo,
                                       string $tarefas01, 
-                                      float $horario,  
+                                      string $horario,  
                                       string $dia,
                                       string $descricao,
                                       bool $status)

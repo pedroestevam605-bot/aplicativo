@@ -29,17 +29,22 @@
     <label>senha: </label>
     <input type="text" name="senha" id="senha"/>
     <br>
-    <button>
+    <button>Cadastrar
         <?php
             try{
               $codigo        = $_POST['codigo'];
               $nome          = $_POST['nome'];
               $email         = $_POST['email'];
               $senha         = $_POST['senha'];
+
+              session_start();//Abrindo a sessão
+
+              $_SESSION['codigo'] = $codigo;
+              $_SESSION['nome']   = $nome;
+              $_SESSION['email']  = $email;
+              $_SESSION['senha']  = $senha;
               
-              
-              //Instaciar a variável pessoa com dados
-              $cadastrar = new Cadastrar($codigo, $nome, $email, $senha);
+
 
             }catch(Except $erro){
                echo "Algo deu errado!!! <br><br> $erro";

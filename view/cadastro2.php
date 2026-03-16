@@ -29,7 +29,7 @@
     <label>senha: </label>
     <input type="text" name="senha" id="senha"/>
     <br>
-    <button>Cadastrar
+    <button><a href="login.php">Salvar
         <?php
             try{
               $codigo        = $_POST['codigo'];
@@ -50,12 +50,12 @@
                echo "Algo deu errado!!! <br><br> $erro";
             }
          ?>
-    </button>
+    </a></button>
     <?php
         echo $cadastrar->imprimir();
     ?>
 </form>
-<button><a href="index.php">Voltar</a></button>   
+<button><a href="login.php">Voltar</a></button>   
 
 </body>
 </html>

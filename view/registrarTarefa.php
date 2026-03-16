@@ -13,27 +13,12 @@
     <title>Registrar de Tarefas</title>
 </head>
 <body>
-    <h1>Registrar de Tarefas</h1>
+    <h1>CENTRAL DE TAREFAS</h1>
     <br><br>
-    <form method="POST">
-    <label>Código: </label>
-    <input type="text" name="codigo" id="codigo"/>
-    <br>
-    <label>tarefas01: </label>
-    <input type="text" name="tarefas01" id="tarefas01"/>
-    <br>
-    <label>horario: </label>
-    <input type="text" name="horario" id="horario"/>
-    <br>
-    <label>dia: </label>
-    <input type="text" name="dia" id="dia"/>
-    <br>
-    <label>descricao: </label>
-    <input type="text" name="descricao" id="descricao"/>
-    <br>
-    <label>status: </label>
-    <input type="text" name="status" id="status"/>
-    <br>
+    <button><a href="cadastrar.php">Cadastro</a></button>
+    <button><a href="consultar.php">Consultar</a></button>
+    <button><a href="atualizar.php">Atualizar</a></button>
+    <button><a href="excluir.php">Excluir</a></button>
     <button type="submit">Salvar
         <?php
             try{
@@ -56,7 +41,7 @@
         echo $tarefa->imprimir();
     ?>
 </form>
-<button><a href="index.php">Voltar</a></button>   
+<button><a href="login.php">Voltar</a></button>   
 
 </body>
 </html>
